@@ -3,7 +3,7 @@ import './App.css';
 import Ypahp from './word-ypahp'
 import Drae from './word-drae'
 import Roma from './word-roma'
-import TheEnd from "./sentence-happy-valentine's-day-dear-amor"
+import TheEnd from "./happy-valentine's-day-dear-amor"
 import Dya from './word-dya'
 import Nvieeatnl from "./word-nvieeatnl"
 
@@ -16,7 +16,7 @@ function App() {
     case '/word-dya': return <Dya />
     case '/word-drae': return <Drae />
     case '/word-roma': return <Roma />
-    case "/sentence-happy-valentine's-day-dear-amor": return <TheEnd />
+    case "/happy-valentine's-day-dear-amor": return <TheEnd />
     default: {
       window.location.href = '/welcome.html'
       return null
