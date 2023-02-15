@@ -1,7 +1,7 @@
 import React from 'react'
 
 const sequence = "nvieeatnl"
-const positions = [57, 72, 17, 88, 23, 66, 42, 92, 19, 89, 11]
+const positions = [57, 72, 17, 88, 23, 66, 42, 92, 19]
 const area = (' '.repeat(10) + '\n').repeat(10)
 const style = {
   fontFamily: 'monospace',
@@ -22,7 +22,7 @@ const HB = () => {
     })
   }, [])
 
-  const win = count > 10
+  const win = count > 8
 
   const reset = React.useCallback(() => {
     setSnake([30, 31])

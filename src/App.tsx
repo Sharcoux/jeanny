@@ -8,9 +8,10 @@ import Dya from './word-dya'
 import Nvieeatnl from "./word-nvieeatnl"
 
 function App() {
-  const url = window.location.pathname
-  console.log(url)
-  switch(url) {
+  const query = window.location.search
+  if(query) window.history.replaceState(null, '', decodeURIComponent(query.substring(1)))
+  const page = window.location.pathname
+  switch(page) {
     case '/word-ypahp': return <Ypahp />
     case "/word-nvieeatnl": return <Nvieeatnl />
     case '/word-dya': return <Dya />
